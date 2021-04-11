@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns:th="http://www.thymelead.org">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>user information</title>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/reset.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
+</head>
+<body>
+	<div class="header_con">
+		<div class="header">
+			<div class="welcome fl">Welcome to Covid-19 Dashboard!</div>
+			<div class="fr">
+				<div class="login_info fl">
+					welcome：<em>Junyan</em>
+				</div>
+			</div>
+		</div>		
+	</div>
+
+	<div class="search_bar clearfix">
+		<a href="index.html" class="logo fl"><img th:src="@{/images/logo.png}"></a>
+		<div class="sub_page_name fl">|&nbsp;&nbsp;&nbsp;&nbsp;Information Center</div>
+	</div>
+
+	<div class="main_con clearfix">
+		<div class="left_menu_con clearfix">
+			<h3>User Center</h3>
+			<ul>
+				<li><a class="active">· Information</a></li>
+				<li><a th:href="@{/medicalLog}">· Medical Log</a></li>
+				<li><a th:href="@{/dailyRecords}">· Daily Records</a></li>
+				<li><a th:href="@{/likelyhood}">· Likelyhood</a></li>
+			</ul>
+		</div>
+		<div class="right_content clearfix">
+				<div class="info_con clearfix">
+				<h3 class="common_title2">Symptoms may appear 2-14 days after exposure to the virus. People with these symptoms may have COVID-19:</h3>
+						<ul class="user_info_list">
+							<li>Fever or chills</li>
+							<li>Cough</li>
+							<li>Shortness of breath or difficulty breathing</li>
+							<li>Fatigue</li>
+							<li>Muscle or body aches</li>
+							<li>Headache</li>
+							<li>New loss of taste or smell</li>
+							<li>Sore throat</li>
+							<li>Congestion or runny nose</li>
+							<li>Nausea or vomiting</li>
+							<li>Diarrhea</li>
+						</ul>
+				</div>
+			</ul>
+		</div>
+		</div>
+	</div>
+
+
+
+
+	
+</body>
+</html>

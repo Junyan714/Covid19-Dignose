@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns:th="http://www.thymelead.org">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Medical Log</title>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/reset.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
+</head>
+<body>
+	<div class="header_con">
+		<div class="header">
+			<div class="welcome fl">Welcome to Covid-19 Dashboard!</div>
+			<div class="fr">
+				<div class="login_info fl">
+					welcome：<em>Junyan</em>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="search_bar clearfix">
+		<a href="index.html" class="logo fl"><img th:src="@{images/logo.png}"></a>
+		<div class="sub_page_name fl">|&nbsp;&nbsp;&nbsp;&nbsp;Information Center</div>
+	</div>
+
+	<div class="main_con clearfix">
+		<div class="left_menu_con clearfix">
+			<h3>User Center</h3>
+			<ul>
+				<li><a th:href="@{/info}">· Information</a></li>
+				<li><a class="active">· Medical Log</a></li>
+				<li><a th:href="@{/dailyRecords}">· Daily Records</a></li>
+				<li><a th:href="@{/likelyhood}">· Likelyhood</a></li>
+			</ul>
+		</div>
+		<div class="right_content clearfix">
+				<h3 class="common_title2">Medical Log</h3>
+				<ul class="order_list_th w978 clearfix">
+					<li class="col01">2021-4-13 19:36:24</li>
+				</ul>
+				<form th:action="@{/info}">
+					<p>Symptom Information <input type="text" name="Symptom Information" class="sympton_input" placeholder="eg:0,1,2,3"></p>
+					<p>Physical Activity <input type="text" name="Physical Activity" class="sympton_input" placeholder="eg:0,1,2,3"></p>
+					<p>Medicines Information <input type="text" name="Medicines Information" class="sympton_input" placeholder="eg:0,1,2,3"></p>
+					<p>Doctor Visites <input type="text" name="Doctor Visites" class="sympton_input" placeholder="eg:0,1,2,3"></p>
+					<input type="submit" name="" value="submit" class="input_submit" style="width: 100px;left: 470px;top: 270px">
+				</form>
+		</div>
+	</div>
+
+
+
+	
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns:th="http://www.thymelead.org">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Covid19 Register</title>
+	<link rel="stylesheet" type="text/css" th:href="@{/css/reset.css}">
+	<link rel="stylesheet" type="text/css" th:href="@{/css/main.css}">
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/register.js"></script>
+</head>
+<body>
+	<div class="register_con">
+
+		<div class="r_con fr">
+			<div class="reg_title clearfix">
+				<h1>Register</h1>
+				<a href="#">Log In</a>
+			</div>
+			<div class="reg_form clearfix">
+				<form>
+				<ul>
+					<li>
+						<label>username:</label>
+						<input type="text" name="user_name" id="user_name">
+						<span class="error_tip">notice</span>
+					</li>					
+					<li>
+						<label>password:</label>
+						<input type="password" name="pwd" id="pwd">
+						<span class="error_tip">notice</span>
+					</li>
+					<li>
+						<label>password check:</label>
+						<input type="password" name="cpwd" id="cpwd">
+						<span class="error_tip">notice</span>
+					</li>
+					<li>
+						<label>email:</label>
+						<input type="text" name="email" id="email">
+						<span class="error_tip">notice</span>
+					</li>
+					<li class="reg_sub">
+						<input type="submit" value="Register" name="">
+					</li>
+				</ul>				
+				</form>
+			</div>
+
+		</div>
+
+	</div>
+
+	
+</body>
+</html>
