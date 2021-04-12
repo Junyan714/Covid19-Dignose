@@ -16,4 +16,9 @@ public class MyMvcConfig implements WebMvcConfigurer {
         registry.addViewController("/main.html").setViewName("user_center_info");
     }
 
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(new LoginHandlerInterceptor())
+                .addPathPatterns("/**").excludePathPatterns("/login.html","/","/user/**","/css/*","/js/**","/images/**");
+    }
 }

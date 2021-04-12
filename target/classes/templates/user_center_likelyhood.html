@@ -19,7 +19,7 @@
 </div>
 
 <div class="search_bar clearfix">
-  <a href="index.html" class="logo fl"><img th:src="@{/images/logo.png}"></a>
+  <div class="sub_page_name fl">Welcome, [[${session.loginUser}]]</div>
   <div class="sub_page_name fl">|&nbsp;&nbsp;&nbsp;&nbsp;Information Center</div>
 </div>
 
@@ -39,7 +39,7 @@
       <li class="col01">2021-4-13 19:36:24</li>
     </ul>
     <form>
-      <h1>The likelyhood of Covid-19 is:  98%</h1>
+      <h1>The likelyhood of Covid-19 is:  [[${session.possibility}]]</h1>
     </form>
   </div>
 </div>

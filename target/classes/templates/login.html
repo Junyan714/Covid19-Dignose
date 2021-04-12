@@ -14,7 +14,7 @@
 			<div class="login_form fr">
 				<div class="login_title clearfix">
 					<h1>User Login</h1>
-					<a th:href="@{/#}">Register</a>
+					<a th:href="@{/user/register}">Register</a>
 				</div>
 				<div class="form_input">
 					<form th:action="@{/user/login/}">
@@ -23,6 +23,7 @@
 						<input type="submit" name="" value="connect" class="input_submit">
 					</form>
 				</div>
+				<p style="color: red" th:text="${msg}"></p>
 			</div>
 		</div>
 	</div>

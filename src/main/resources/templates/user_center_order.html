@@ -19,7 +19,7 @@
 	</div>
 
 	<div class="search_bar clearfix">
-		<a href="index.html" class="logo fl"><img th:src="@{images/logo.png}"></a>
+		<div class="sub_page_name fl">Welcome, [[${session.loginUser}]]</div>
 		<div class="sub_page_name fl">|&nbsp;&nbsp;&nbsp;&nbsp;Information Center</div>
 	</div>
 
@@ -38,12 +38,52 @@
 				<ul class="order_list_th w978 clearfix">
 					<li class="col01">2021-4-13 19:36:24</li>
 				</ul>
-				<form th:action="@{/info}">
-					<p>Symptom Information <input type="text" name="Symptom Information" class="sympton_input" placeholder="eg:0,1,2,3"></p>
-					<p>Physical Activity <input type="text" name="Physical Activity" class="sympton_input" placeholder="eg:0,1,2,3"></p>
-					<p>Medicines Information <input type="text" name="Medicines Information" class="sympton_input" placeholder="eg:0,1,2,3"></p>
-					<p>Doctor Visites <input type="text" name="Doctor Visites" class="sympton_input" placeholder="eg:0,1,2,3"></p>
-					<input type="submit" name="" value="submit" class="input_submit" style="width: 100px;left: 470px;top: 270px">
+				<form th:action="@{/medicalReturnLog}">
+					<p>In past 14 days, have you got cough? Please Evaluate your cough level.</p>
+					<p>
+						<input type="radio" value="0" name="cough">None
+						<input type="radio" value="10" name="cough">Mild
+						<input type="radio" value="20" name="cough">Medium
+						<input type="radio" value="30" name="cough">Severe
+					</p>
+					<p>In past 14 days, have you got fever or chills? Please Evaluate your fever or chills level.</p>
+					<p>
+						<input type="radio" value="0" name="fever">None
+						<input type="radio" value="20" name="fever">Mild
+						<input type="radio" value="35" name="fever">Medium
+						<input type="radio" value="50" name="fever">Severe
+					</p>
+					<p>In past 14 days, have you got loss of taste and smell? Please Evaluate your loss of taste and smell level.</p>
+					<p>
+						<input type="radio" value="0" name="loss">None
+						<input type="radio" value="20" name="loss">Mild
+						<input type="radio" value="25" name="loss">Medium
+						<input type="radio" value="30" name="loss">Severe
+					</p>
+					<p>In past 14 days, have you got muscle or body ashes? Please Evaluate your muscle or body ashes level.</p>
+					<p>
+						<input type="radio" value="0" name="ashes">None
+						<input type="radio" value="5" name="ashes">Mild
+						<input type="radio" value="10" name="ashes">Medium
+						<input type="radio" value="15" name="ashes">Severe
+					</p>
+					<p>In past 14 days, have you got running nose? Please Evaluate your running nose level.</p>
+					<p>
+						<input type="radio" value="0" name="nose">None
+						<input type="radio" value="5" name="nose">Mild
+						<input type="radio" value="7" name="nose">Medium
+						<input type="radio" value="10" name="nose">Severe
+					</p>
+
+					<p>Please write down your Antibiotics drugs. <input type="text"</p>
+					<p>Please write down your Nourishment. <input type="text"</p>
+					<p>Please write down your Traumatic medicines. <input type="text"</p>
+					<p>In past 14 days, have you got doctor visit?</p>
+					<p>
+						<input type="radio" value="0" name="doctor">No
+						<input type="radio" value="100" name="doctor">Yes
+					</p>
+					<input type="submit" name="" value="submit" class="input_submit" style="width: 100px;left: 1270px;top: 570px">
 				</form>
 		</div>
 	</div>

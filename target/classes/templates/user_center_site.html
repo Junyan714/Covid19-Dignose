@@ -19,7 +19,7 @@
 	</div>
 
 	<div class="search_bar clearfix">
-		<a href="index.html" class="logo fl"><img th:src="@{/images/logo.png}"></a>
+		<div class="sub_page_name fl">Welcome, [[${session.loginUser}]]</div>
 		<div class="sub_page_name fl">|&nbsp;&nbsp;&nbsp;&nbsp;Information Center</div>
 	</div>
 
@@ -38,11 +38,19 @@
 			<ul class="order_list_th w978 clearfix">
 				<li class="col01">2021-4-13 19:36:24</li>
 			</ul>
-			<form th:action="@{/info}">
-				<p>Take outs <input type="text" name="Take outs" class="takeouts_input" placeholder="eg:0,1,2,3"></p>
-				<p>Surrounding news <input type="text" name="Surrounding_news" class="surrounding_input" placeholder="eg:0,1,2,3"></p>
-				<p>Trips <input type="text" name="trips" class="trips_input" placeholder="eg:0,1,2,3"></p>
-				<input type="submit" name="" value="submit" class="input_submit" style="width: 100px;left: 470px;top: 270px">
+			<form th:action="@{/dailyRecordsReturn}">
+				<p>In past 14 days, how many people have you met? Please Evaluate your cough level.</p>
+				<p>
+					<input type="radio" value="10" name="trips">1-5
+					<input type="radio" value="15" name="trips">6-10
+					<input type="radio" value="20" name="trips">11-20
+					<input type="radio" value="25" name="trips">20+
+				</p>
+				<p>Could you please input your surrounding news?</p>
+				<p><input type="text" name="surrounding"></p>
+				<p>Could you please input the number of your take outs?</p>
+				<p><input type="text" name="takeouts"></p>
+				<input type="submit" name="" value="submit" class="input_submit" style="width: 100px;left: 1270px;top: 570px">
 			</form>
 		</div>
 	</div>
